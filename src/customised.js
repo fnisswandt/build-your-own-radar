@@ -1,6 +1,6 @@
-const radar = require("./default/radar.json");
+const radar = require("./custom/radar.json");
 
-require("./images/logo.png");
+require("./custom/logo.png");
 require('./common');
 require('./images/radar_legend.png');
 

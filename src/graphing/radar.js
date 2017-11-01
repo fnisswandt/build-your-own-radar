@@ -259,8 +259,23 @@ const Radar = function (size, radar) {
 
     var blipItemDescription = blipListItem.append('div')
       .attr('class', 'blip-item-description');
+
     if (blip.description()) {
       blipItemDescription.append('p').html(blip.description());
+    }
+
+    appendDescription(blip, blipItemDescription, "owner", "Owner");
+    appendDescription(blip, blipItemDescription, "usedBy", "Used By");
+    appendDescription(blip, blipItemDescription, "versionsSupported", "Versions Supported");
+
+    function appendDescription(blip, blipItemDescription, field, prettyPrint) {
+
+      var item = blip[field]();
+
+      if (item && item.length > 0) {
+        blipItemDescription.append('p').html("<b>" + prettyPrint + ": </b>" + blip[field]());
+      }
+
     }
 
     var mouseOver = function () {
@@ -284,15 +299,25 @@ const Radar = function (size, radar) {
         d3.select('.blip-item-description.expanded').classed("expanded", false);
       blipItemDescription.classed("expanded", !blipItemDescription.classed("expanded"));
 
+      // d3.select('.blip-item-owner.expanded').node() !== blipItemOwner.node() &&
+      //   d3.select('.blip-item-owner.expanded').classed("expanded", false);
+      // blipItemOwner.classed("expanded", !blipItemOwner.classed("expanded"));
+
       blipItemDescription.on('click', function () {
         d3.event.stopPropagation();
       });
+
+      // blipItemOwner.on('click', function () {
+      //   d3.event.stopPropagation();
+      // });
+
+
     };
 
     blipListItem.on('click', clickBlip);
   }
 
-  function removeHomeLink(){
+  function removeHomeLink() {
     d3.select('.home-link').remove();
   }
 
@@ -310,7 +335,7 @@ const Radar = function (size, radar) {
     }
   }
 
-  function removeRadarLegend(){
+  function removeRadarLegend() {
     d3.select('.legend').remove();
   }
 
@@ -321,34 +346,34 @@ const Radar = function (size, radar) {
     var circleKey = "No change";
 
     var container = d3.select('svg').append('g')
-      .attr('class', 'legend legend'+"-"+order);
+      .attr('class', 'legend legend' + "-" + order);
 
     var x = 10;
     var y = 10;
 
 
-    if(order == "first") {
+    if (order == "first") {
       x = 4 * size / 5;
       y = 1 * size / 5;
     }
 
-    if(order == "second") {
+    if (order == "second") {
       x = 1 * size / 5 - 15;
       y = 1 * size / 5 - 20;
     }
 
-    if(order == "third") {
+    if (order == "third") {
       x = 1 * size / 5 - 15;
       y = 4 * size / 5 + 15;
     }
 
-    if(order == "fourth") {
+    if (order == "fourth") {
       x = 4 * size / 5;
       y = 4 * size / 5;
     }
 
     d3.select('.legend')
-      .attr('class', 'legend legend-'+order)
+      .attr('class', 'legend legend-' + order)
       .transition()
       .style('visibility', 'visible');
 
@@ -452,10 +477,7 @@ const Radar = function (size, radar) {
       .append('div')
       .attr('class', 'footer-content')
       .append('p')
-      .html('Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. '
-      + 'By using this service you agree to <a href="https://info.thoughtworks.com/visualize-your-tech-strategy-terms-of-service.html">ThoughtWorks\' terms of use</a>. '
-      + 'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. '
-      + 'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.');
+      .html('This software is <a href="https://github.com/reedbusiness/build-your-own-radar">open source</a> and available for download and self-hosting.');
   }
 
   function mouseoverQuadrant(order) {
@@ -519,7 +541,7 @@ const Radar = function (size, radar) {
 
 
 
-    if (d3.select('.legend.legend-' + order).empty()){
+    if (d3.select('.legend.legend-' + order).empty()) {
       drawLegend(order);
     }
   }

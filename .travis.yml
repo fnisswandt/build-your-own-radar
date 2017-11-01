@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '7'
+- '8'
 jobs:
   include:
     - stage: Deploy QA
@@ -14,7 +14,7 @@ jobs:
         skip_cleanup: true
         local_dir: dist
         on:
-          repo: thoughtworks/build-your-own-radar
+          repo: reedbusiness/build-your-own-radar
           condition: "$TRAVIS_PULL_REQUEST = false"
     - stage: Invalidate CDN
       install: pip install --user awscli && export PATH=$PATH:$HOME/.local/bin

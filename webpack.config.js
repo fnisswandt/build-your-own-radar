@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const path = require('path');
 const buildPath = path.join(__dirname, './dist');
 const args = require('yargs').argv;
+const fs = require("fs");
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -11,7 +12,15 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 let isProd = args.prod;
 let isDev = args.dev;
 
-let main = ['./src/site.js'];
+let main;
+const exists = fs.existsSync("./src/custom/radar.json");
+
+if(exists) {
+  main = ['./src/customised.js'];  
+} else {
+  main = ['./src/site.js'];  
+}
+
 let common = ['./src/common.js'];
 let devtool;
 

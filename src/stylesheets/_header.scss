@@ -5,15 +5,16 @@ header {
   margin-bottom: 15px;
 
   .radar-title {
-    background-color: $grey-light;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: $grey-corp;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: table;
     margin: auto;
     width: 100%;
 
     .radar-title__text {
       display: table-cell;
+      vertical-align: middle;
       width: 70%;
       text-align: left;
       padding-left: 100px;
@@ -24,11 +25,12 @@ header {
         line-height: 0.8em;
         margin: 0;
         text-transform: uppercase;
+        color: #ffffff;
       }
     }
 
     .radar-title__logo {
-      width: 30%;
+      // width: 30%;
       display: table-cell;
       vertical-align: middle;
       a {
@@ -36,7 +38,7 @@ header {
       }
       img {
         vertical-align: middle;
-        width: 35%;
+        // width: 35%;
       }
 
     }

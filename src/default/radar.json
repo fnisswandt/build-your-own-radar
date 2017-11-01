@@ -1,0 +1,278 @@
+{
+  "title": "Tech Radar",
+  "columnNames": [
+    "name",
+    "ring",
+    "quadrant",
+    "isNew",
+    "description"
+  ],
+  "points": [
+    {
+      "name": "Terraform",
+      "ring": "trial",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description for Dave. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href='https:\/\/www.thoughtworks.com'>anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Consul",
+      "ring": "assess",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Grafana",
+      "ring": "assess",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Nomads",
+      "ring": "assess",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Packer",
+      "ring": "assess",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Apache Kafka",
+      "ring": "trial",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "HashiCorp Vault",
+      "ring": "assess",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Jenkins as a deployment pipeline",
+      "ring": "assess",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Bamboo",
+      "ring": "adopt",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "squid",
+      "ring": "adopt",
+      "quadrant": "tools",
+      "isNew": "FALSE",
+      "description": "Follow this <a href=\"https://arashmilani.com/post?id=49\"> post </a> to set up squid on EC2."
+    },
+    {
+      "name": "NodeJs",
+      "ring": "adopt",
+      "quadrant": "languages & frameworks",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Ruby",
+      "ring": "adopt",
+      "quadrant": "languages & frameworks",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "AngularJS",
+      "ring": "trial",
+      "quadrant": "languages & frameworks",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Scala",
+      "ring": "hold",
+      "quadrant": "languages & frameworks",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Spark",
+      "ring": "trial",
+      "quadrant": "languages & frameworks",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Python",
+      "ring": "adopt",
+      "quadrant": "languages & frameworks",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "golang",
+      "ring": "hold",
+      "quadrant": "languages & frameworks",
+      "isNew": "FALSE",
+      "description": "<a href=\"https://golang.org/\"> Go </a> is an open source programming language that makes it easy to build simple, reliable, and efficient software."
+    },
+    {
+      "name": "Docker",
+      "ring": "adopt",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Apache Mesos",
+      "ring": "hold",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "AWS Lambda",
+      "ring": "assess",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Kubernetes",
+      "ring": "hold",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Rancher",
+      "ring": "hold",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Amazon API Gateway",
+      "ring": "hold",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Apache Flink",
+      "ring": "hold",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "AWS Application Load Balancer",
+      "ring": "hold",
+      "quadrant": "platforms",
+      "isNew": "TRUE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Cassandra",
+      "ring": "hold",
+      "quadrant": "platforms",
+      "isNew": "TRUE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Vertica",
+      "ring": "trial",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Electron",
+      "ring": "trial",
+      "quadrant": "platforms",
+      "isNew": "TRUE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Airflow",
+      "ring": "trial",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "RabbitMQ",
+      "ring": "trial",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "netdata",
+      "ring": "trial",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "<a target=\"_blank\" href=\"https://github.com/firehol/netdata\"> netdata </a> is a system for distributed real-time performance and health monitoring. It provides unparalleled insights, in real-time, of everything happening on the system it runs (including applications such as web and database servers), using modern interactive web dashboards.\n\nnetdata is fast and efficient, designed to permanently run on all systems (physical & virtual servers, containers, IoT devices), without disrupting their core function. "
+    },
+    {
+      "name": "redis",
+      "ring": "adopt",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "mongo",
+      "ring": "adopt",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "mysql",
+      "ring": "adopt",
+      "quadrant": "platforms",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Data Lake",
+      "ring": "assess",
+      "quadrant": "techniques",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Reactive architectures",
+      "ring": "assess",
+      "quadrant": "techniques",
+      "isNew": "FALSE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Serverless architecture",
+      "ring": "hold",
+      "quadrant": "techniques",
+      "isNew": "TRUE",
+      "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
+    },
+    {
+      "name": "Lambda architecture",
+      "ring": "assess",
+      "quadrant": "techniques",
+      "isNew": "FALSE",
+      "description": "<a href=\"http://lambda-architecture.net/\"> lambda-architecture </a>"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
  Copyright (c) 2015 Bruno Trecenti		
  Copyright (c) 2016 ThoughtWorks, Inc
-                  
+ Copyright (c) 2017 Reed Business Information
+
                     GNU AFFERO GENERAL PUBLIC LICENSE
                        Version 3, 19 November 2007
 
