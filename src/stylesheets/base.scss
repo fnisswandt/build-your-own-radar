@@ -149,16 +149,18 @@ body {
 
 }
 
+.radar-margins {
+  margin: 0 auto;
+}
 
 @media screen {
 
   #radar {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
 
+    width: 80%;
+    position: relative;
+  
     svg#radar-plot {
-      margin: 0 auto;
       transition: all 1s ease;
       position: absolute;
       left: 0;
@@ -294,6 +296,24 @@ body {
         max-height: 10000px;
         max-width: 40%;
       }
+
+      @media (max-width:1400px) {
+
+        &.selected {
+          position: relative;
+          max-height: 10000px;
+          max-width: 20%;
+        }
+
+        .radar-margins {
+          margin: 0px;
+        }
+
+        ul {
+          display: inline;
+        }
+      }
+
 
       ul {
         padding: 0;

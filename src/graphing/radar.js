@@ -547,7 +547,7 @@ const Radar = function (size, radar) {
   }
 
   self.init = function () {
-    radarElement = d3.select('body').append('div').attr('id', 'radar');
+    radarElement = d3.select('body').append('div').attr('id', 'radar').attr('class', 'radar-margins');
     return self;
   };
 
@@ -562,7 +562,7 @@ const Radar = function (size, radar) {
 
     radarElement.style('height', size + 14 + 'px');
     svg = radarElement.append("svg").call(tip);
-    svg.attr('id', 'radar-plot').attr('width', size).attr('height', size + 14);
+    svg.attr('id', 'radar-plot').attr('width', size).attr('height', size + 14).attr('class', 'radar-margins');
 
     _.each(quadrants, function (quadrant) {
       var quadrantGroup = plotQuadrant(rings, quadrant);
