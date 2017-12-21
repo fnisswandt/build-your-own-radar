@@ -510,8 +510,9 @@ const Radar = function (size, radar) {
     var translateXAll = (1 - adjustX) / 2 * size * scale / 2 + ((1 - adjustX) / 2 * (1 - scale / 2) * size);
     var translateYAll = (1 + adjustY) / 2 * size * scale / 2;
 
-    var moveRight = (1 + adjustX) * (0.8 * window.innerWidth - size) / 2;
-    var moveLeft = (1 - adjustX) * (0.8 * window.innerWidth - size) / 2;
+    var radarWidthPercentage = 0.9;
+    var moveRight = (1 + adjustX) * (radarWidthPercentage * window.innerWidth - size) / 2;
+    var moveLeft = (1 - adjustX) * (radarWidthPercentage * window.innerWidth - size) / 2;
 
     var blipScale = 3 / 4;
     var blipTranslate = (1 - blipScale) / blipScale;
@@ -547,7 +548,7 @@ const Radar = function (size, radar) {
   }
 
   self.init = function () {
-    radarElement = d3.select('body').append('div').attr('id', 'radar').attr('class', 'radar-margins');
+    radarElement = d3.select('body').append('div').attr('id', 'radar');
     return self;
   };
 

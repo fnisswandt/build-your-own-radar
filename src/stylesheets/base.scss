@@ -22,6 +22,10 @@ body {
     padding: 0;
   }
 
+  .radar-margins {
+    margin: 0 auto;
+  }
+  
   @page {
     margin: 2cm;
   }
@@ -153,11 +157,19 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width:1300px) {
+
+    .radar-margins {
+      margin: 0px;
+    }
+  }
+
 @media screen {
 
-  #radar {
 
-    width: 80%;
+  #radar {
+  
+    width: 90%;
     position: relative;
   
     svg#radar-plot {
@@ -297,21 +309,23 @@ body {
         max-width: 40%;
       }
 
-      @media (max-width:1400px) {
-
-        &.selected {
-          position: relative;
-          max-height: 10000px;
-          max-width: 20%;
-        }
-
-        .radar-margins {
-          margin: 0px;
-        }
+      @media (max-width:1300px) {
+      
+        // &.selected {
+        //   position: relative;
+        //   max-height: 10000px;
+        //   max-width: 20%;
+        // }
 
         ul {
           display: inline;
         }
+
+        &.expanded {
+          transition: max-height 0.5s ease 0.2s;
+          max-height: 1000px;
+        }
+
       }
 
 

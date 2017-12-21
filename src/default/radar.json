@@ -5,6 +5,8 @@
     "ring",
     "quadrant",
     "isNew",
+    "owner",
+    "usedBy",
     "description"
   ],
   "points": [
@@ -13,6 +15,8 @@
       "ring": "trial",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description for Dave. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href='https:\/\/www.thoughtworks.com'>anchor links to documentation and referance material</a>."
     },
     {
@@ -20,6 +24,8 @@
       "ring": "assess",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -27,6 +33,8 @@
       "ring": "assess",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -34,6 +42,8 @@
       "ring": "assess",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -41,6 +51,8 @@
       "ring": "assess",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -48,6 +60,8 @@
       "ring": "trial",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -55,6 +69,8 @@
       "ring": "assess",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -62,6 +78,8 @@
       "ring": "assess",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -69,6 +87,8 @@
       "ring": "adopt",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -76,6 +96,8 @@
       "ring": "adopt",
       "quadrant": "tools",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "Follow this <a href=\"https://arashmilani.com/post?id=49\"> post </a> to set up squid on EC2."
     },
     {
@@ -83,6 +105,8 @@
       "ring": "adopt",
       "quadrant": "languages & frameworks",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -90,6 +114,8 @@
       "ring": "adopt",
       "quadrant": "languages & frameworks",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -97,6 +123,8 @@
       "ring": "trial",
       "quadrant": "languages & frameworks",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -104,6 +132,8 @@
       "ring": "hold",
       "quadrant": "languages & frameworks",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -111,6 +141,8 @@
       "ring": "trial",
       "quadrant": "languages & frameworks",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -118,6 +150,8 @@
       "ring": "adopt",
       "quadrant": "languages & frameworks",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -125,6 +159,8 @@
       "ring": "hold",
       "quadrant": "languages & frameworks",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "<a href=\"https://golang.org/\"> Go </a> is an open source programming language that makes it easy to build simple, reliable, and efficient software."
     },
     {
@@ -132,6 +168,8 @@
       "ring": "adopt",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -139,6 +177,8 @@
       "ring": "hold",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -146,6 +186,8 @@
       "ring": "assess",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -153,6 +195,8 @@
       "ring": "hold",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -160,6 +204,8 @@
       "ring": "hold",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -167,6 +213,8 @@
       "ring": "hold",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -174,6 +222,8 @@
       "ring": "hold",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -181,6 +231,8 @@
       "ring": "hold",
       "quadrant": "platforms",
       "isNew": "TRUE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -188,6 +240,8 @@
       "ring": "hold",
       "quadrant": "platforms",
       "isNew": "TRUE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -195,6 +249,8 @@
       "ring": "trial",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -202,6 +258,8 @@
       "ring": "trial",
       "quadrant": "platforms",
       "isNew": "TRUE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -209,6 +267,8 @@
       "ring": "trial",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -216,6 +276,8 @@
       "ring": "trial",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -223,6 +285,8 @@
       "ring": "trial",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "<a target=\"_blank\" href=\"https://github.com/firehol/netdata\"> netdata </a> is a system for distributed real-time performance and health monitoring. It provides unparalleled insights, in real-time, of everything happening on the system it runs (including applications such as web and database servers), using modern interactive web dashboards.\n\nnetdata is fast and efficient, designed to permanently run on all systems (physical & virtual servers, containers, IoT devices), without disrupting their core function. "
     },
     {
@@ -230,6 +294,8 @@
       "ring": "adopt",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -237,6 +303,8 @@
       "ring": "adopt",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -244,6 +312,8 @@
       "ring": "adopt",
       "quadrant": "platforms",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -251,6 +321,8 @@
       "ring": "assess",
       "quadrant": "techniques",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -258,6 +330,8 @@
       "ring": "assess",
       "quadrant": "techniques",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -265,6 +339,8 @@
       "ring": "hold",
       "quadrant": "techniques",
       "isNew": "TRUE",
+      "owner": "",
+      "usedBy": "",
       "description": "This is the description. You can use basic html such as the <strong>strong tag to emphasise keywords and phrases</strong> and insert <a href=\"https://www.thoughtworks.com\">anchor links to documentation and referance material</a>."
     },
     {
@@ -272,6 +348,8 @@
       "ring": "assess",
       "quadrant": "techniques",
       "isNew": "FALSE",
+      "owner": "",
+      "usedBy": "",
       "description": "<a href=\"http://lambda-architecture.net/\"> lambda-architecture </a>"
     }
   ]
