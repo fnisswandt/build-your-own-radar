@@ -159,17 +159,19 @@ body {
 
 @media (max-width:1300px) {
 
-    .radar-margins {
-      margin: 0px;
+    .radar-zoom {
+      margin-left: 4px;
+      margin-right: 4px;
+      transition: visibility 1s ease 1s;
     }
+
   }
 
 @media screen {
 
-
   #radar {
-  
-    width: 90%;
+
+    width: 100%;
     position: relative;
   
     svg#radar-plot {
@@ -306,7 +308,7 @@ body {
       &.selected {
         position: relative;
         max-height: 10000px;
-        max-width: 40%;
+        max-width: 25%;
       }
 
       @media (max-width:1300px) {
@@ -317,9 +319,9 @@ body {
         //   max-width: 20%;
         // }
 
-        ul {
-          display: inline;
-        }
+        // ul {
+        //   display: inline;
+        // }
 
         &.expanded {
           transition: max-height 0.5s ease 0.2s;
@@ -327,7 +329,6 @@ body {
         }
 
       }
-
 
       ul {
         padding: 0;

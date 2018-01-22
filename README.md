@@ -4,6 +4,10 @@ A library that generates an interactive radar, inspired by [thoughtworks.com/rad
 
 ## How To Use
 
+### Prerequisites
+- Python 2.7
+- Node.js 6 or greater
+
 All tasks are defined in `package.json`.
 
 - `git clone git@github.com:reedbusiness/build-your-own-radar.git`

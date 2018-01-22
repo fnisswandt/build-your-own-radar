@@ -150,6 +150,7 @@ const Radar = function (size, radar) {
   }
 
   function thereIsCollision(blip, coordinates, allCoordinates) {
+    
     return allCoordinates.some(function (currentCoordinates) {
       return (Math.abs(currentCoordinates[0] - coordinates[0]) < blip.width) && (Math.abs(currentCoordinates[1] - coordinates[1]) < blip.width)
     });
@@ -403,6 +404,8 @@ const Radar = function (size, radar) {
 
     svg.style('left', 0).style('right', 0);
 
+    svg.classed('radar-zoom', false);
+
     d3.selectAll('.button')
       .classed('selected', false)
       .classed('full-view', true);
@@ -493,6 +496,7 @@ const Radar = function (size, radar) {
     d3.selectAll('.home-link').classed('selected', false);
     createHomeLink(d3.select('header'));
 
+    d3.select('#radar-plot').classed('radar-zoom', true);
     d3.selectAll('.button').classed('selected', false).classed('full-view', false);
     d3.selectAll('.button.' + order).classed('selected', true);
     d3.selectAll('.quadrant-table').classed('selected', false);
