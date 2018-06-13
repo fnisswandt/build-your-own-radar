@@ -33,7 +33,6 @@ const Radar = function() {
     quadrants[addingQuadrant].quadrant = quadrant;
     setNumbers(quadrant.blips());
 
-    console.log("qb", quadrant.blips().map(x => { return {name: x.name(), ring: x.ring().name(), order: x.number()} }));
     addingQuadrant++;
   };
 

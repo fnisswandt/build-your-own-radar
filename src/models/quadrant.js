@@ -41,7 +41,6 @@ const Quadrant = function (name) {
       hold: 3
     };
 
-    console.log("sorting", blips[0].ring().name() );
     var sortedBlips = blips.sort(function(blipA, blipB) {
       var nameA = blipA.ring().name();
       var nameB = blipB.ring().name();
@@ -52,6 +51,17 @@ const Quadrant = function (name) {
 
       if(ringOrder[nameA] < ringOrder[nameB] ) {
         return -1
+      }
+
+      console.log("same ring - alpha", blipA.name(), blipB.name() , blipA.name() > blipB.name());
+
+
+      if(blipA.name() > blipB.name()) {
+        return 1;
+      }
+
+      if(blipA.name() < blipB.name()) {
+        return -1;
       }
 
       return 0;

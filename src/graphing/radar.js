@@ -179,7 +179,6 @@ const Radar = function (size, radar) {
         return;
       }
 
-      console.log("ringBlips", ringBlips.map(item => item.name()));
       var maxRadius, minRadius;
 
       minRadius = ringCalculator.getRadius(i);
