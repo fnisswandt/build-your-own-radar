@@ -150,7 +150,7 @@ const Radar = function (size, radar) {
   }
 
   function thereIsCollision(blip, coordinates, allCoordinates) {
-    
+
     return allCoordinates.some(function (currentCoordinates) {
       return (Math.abs(currentCoordinates[0] - coordinates[0]) < blip.width) && (Math.abs(currentCoordinates[1] - coordinates[1]) < blip.width)
     });
@@ -256,10 +256,12 @@ const Radar = function (size, radar) {
     var blipText = blip.number() + '. ' + blip.name() + (blip.topic() ? ('. - ' + blip.topic()) : '');
     blipListItem.append('div')
       .attr('class', 'blip-list-item')
+      .attr('id', 'blip-item-' + blip.number())
       .text(blipText);
 
     var blipItemDescription = blipListItem.append('div')
-      .attr('class', 'blip-item-description');
+      .attr('class', 'blip-item-description')
+      .attr('id', 'blip-desc-' + blip.number());
 
     if (blip.description()) {
       blipItemDescription.append('p').html(blip.description());
@@ -296,6 +298,7 @@ const Radar = function (size, radar) {
     group.on('mouseover', mouseOver).on('mouseout', mouseOut);
 
     var clickBlip = function () {
+
       d3.select('.blip-item-description.expanded').node() !== blipItemDescription.node() &&
         d3.select('.blip-item-description.expanded').classed("expanded", false);
       blipItemDescription.classed("expanded", !blipItemDescription.classed("expanded"));
@@ -305,6 +308,7 @@ const Radar = function (size, radar) {
       // blipItemOwner.classed("expanded", !blipItemOwner.classed("expanded"));
 
       blipItemDescription.on('click', function () {
+
         d3.event.stopPropagation();
       });
 
@@ -462,15 +466,83 @@ const Radar = function (size, radar) {
         .on('click', selectQuadrant.bind({}, quadrant.order, quadrant.startAngle));
     }
 
+    var itemList = [];
+
     _.each([0, 1, 2, 3], function (i) {
+
+      _.each(quadrants[i].quadrant.blips(), function (blip) {
+
+        itemList.push({'index': itemList.length, 'quadrantId': i, 'description': '' + blip.name() + ' - ' + blip.ring().name() + ' (' + blip.number() + ')'});
+      });
+
       addButton(quadrants[i]);
     });
-
 
     header.append('div')
       .classed('print-radar button no-capitalize', true)
       .text('Print this radar')
       .on('click', window.print.bind(window));
+
+    header.append('div')
+      .classed('search-radar button', true)
+      .text('Search')
+      .on('click', function () {
+        header.select('#search-box')
+          .attr('class', 'search-box-visible')
+      });
+
+    var searchDiv = header.append('div')
+      .attr('id', 'search-box')
+      .attr('class', 'search-box-hidden');
+
+
+    searchDiv.append('span').text('Select an item from the list and take note of the number.');
+
+    var list = searchDiv.append('select')
+      .attr('id', 'search-list')
+      .on('change', function () {
+        var e = document.getElementById('search-list')
+
+        if (e.selectedIndex === 0) {
+          return;
+        }
+
+        console.log(e.selectedIndex, itemList[e.selectedIndex - 1], itemList[e.selectedIndex + 1])
+
+        var qid = itemList[e.selectedIndex - 1].quadrantId;
+        var current = quadrants[qid];
+
+        console.log("current", current, qid)
+
+        searchDiv.attr('class', 'search-box-hidden');
+        selectQuadrant(current.order, current.startAngle);
+
+        var blipId = 'blip-item-' + e.selectedIndex;
+        var blipDescId = 'blip-desc-' + e.selectedIndex;
+
+        console.log(blipId, blipDescId);
+
+        d3.selectAll('.blip-list-item').classed('highlight', false);
+        d3.selectAll('.blip-list-description').classed('expanded', false);
+        d3.select('#' + blipId).classed('highlight', true);
+        d3.select('#' + blipDescId).classed('expanded', true);
+        
+        setTimeout(function() {
+          document.getElementById(blipId).scrollIntoView();
+        }, 1100);
+
+      });
+
+    list.append('option')
+      .attr('value', '')
+      .text('-');
+
+    _.each(itemList, function (item) {
+      list.append('option')
+        .attr('value', item.index)
+        .text(item.description);
+
+    });
   }
 
   function plotRadarFooter() {

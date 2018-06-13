@@ -76,6 +76,8 @@ const Site = function () {
           ringMap[ringName] = new Ring(ringName, i);
         });
 
+        console.log("map", ringMap);
+
         var quadrants = {};
         _.each(blips, function (blip) {
           if (!quadrants[blip.quadrant]) {

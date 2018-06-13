@@ -169,6 +169,21 @@ body {
 
 @media screen {
 
+    .search-box-hidden {
+      visibility: hidden;
+      height: 0px;
+    }
+    .search-box-visible {
+      margin-left: 164px;
+      margin-right: 184px;
+      transition: ease 1s;
+      visibility: visible;
+      background-color: $grey;
+      border-style: solid;
+      border-width: 1px;
+      border-color: $grey-dark;
+    }
+
   #radar {
 
     width: 100%;
