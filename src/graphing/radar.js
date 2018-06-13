@@ -508,20 +508,14 @@ const Radar = function (size, radar) {
           return;
         }
 
-        console.log(e.selectedIndex, itemList[e.selectedIndex - 1], itemList[e.selectedIndex + 1])
-
         var qid = itemList[e.selectedIndex - 1].quadrantId;
         var current = quadrants[qid];
-
-        console.log("current", current, qid)
 
         searchDiv.attr('class', 'search-box-hidden');
         selectQuadrant(current.order, current.startAngle);
 
         var blipId = 'blip-item-' + e.selectedIndex;
         var blipDescId = 'blip-desc-' + e.selectedIndex;
-
-        console.log(blipId, blipDescId);
 
         d3.selectAll('.blip-list-item').classed('highlight', false);
         d3.selectAll('.blip-list-description').classed('expanded', false);

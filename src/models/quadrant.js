@@ -5,8 +5,6 @@ const Quadrant = function (name) {
   blips = [];
   self.isDirty = true;
 
-    console.log("instatiating", name);
-
   self.name = function () {
     return name;
   };
@@ -52,9 +50,6 @@ const Quadrant = function (name) {
       if(ringOrder[nameA] < ringOrder[nameB] ) {
         return -1
       }
-
-      console.log("same ring - alpha", blipA.name(), blipB.name() , blipA.name() > blipB.name());
-
 
       if(blipA.name() > blipB.name()) {
         return 1;
