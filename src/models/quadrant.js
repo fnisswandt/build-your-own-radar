@@ -3,7 +3,9 @@ const Quadrant = function (name) {
 
   self = {};
   blips = [];
-  isDirty = true;
+  self.isDirty = true;
+
+    console.log("instatiating", name);
 
   self.name = function () {
     return name;
@@ -11,7 +13,7 @@ const Quadrant = function (name) {
 
   self.add = function (newBlips) {
 
-    isDirty = true;
+    self.isDirty = true;
 
     if (Array.isArray(newBlips)) {
       blips = blips.concat(newBlips);
@@ -22,7 +24,7 @@ const Quadrant = function (name) {
 
   self.blips = function () {
 
-    if(isDirty) {
+    if(self.isDirty) {
       self.sortBlipsByRing_();
     }
 
@@ -39,6 +41,7 @@ const Quadrant = function (name) {
       hold: 3
     };
 
+    console.log("sorting", blips[0].ring().name() );
     var sortedBlips = blips.sort(function(blipA, blipB) {
       var nameA = blipA.ring().name();
       var nameB = blipB.ring().name();
@@ -55,7 +58,7 @@ const Quadrant = function (name) {
 
     });
 
-    isDirty = false;
+    self.isDirty = false;
     blips = sortedBlips;
 
   }

@@ -170,7 +170,8 @@ const Radar = function (size, radar) {
 
     blips = quadrant.blips();
     rings.forEach(function (ring, i) {
-      var ringBlips = blips.filter(function (blip) {
+
+     var ringBlips = blips.filter(function (blip) {
         return blip.ring() == ring;
       });
 
@@ -178,6 +179,7 @@ const Radar = function (size, radar) {
         return;
       }
 
+      console.log("ringBlips", ringBlips.map(item => item.name()));
       var maxRadius, minRadius;
 
       minRadius = ringCalculator.getRadius(i);
