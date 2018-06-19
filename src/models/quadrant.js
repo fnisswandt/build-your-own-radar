@@ -40,8 +40,8 @@ const Quadrant = function (name) {
     };
 
     var sortedBlips = blips.sort(function(blipA, blipB) {
-      var nameA = blipA.ring().name();
-      var nameB = blipB.ring().name();
+      var nameA = blipA.ring().name().toLowerCase();
+      var nameB = blipB.ring().name().toLowerCase();
 
       if(ringOrder[nameA] > ringOrder[nameB] ) {
         return 1;
@@ -51,11 +51,11 @@ const Quadrant = function (name) {
         return -1
       }
 
-      if(blipA.name() > blipB.name()) {
+      if(blipA.name().toLowerCase() > blipB.name().toLowerCase()) {
         return 1;
       }
 
-      if(blipA.name() < blipB.name()) {
+      if(blipA.name().toLowerCase() < blipB.name().toLowerCase()) {
         return -1;
       }
 

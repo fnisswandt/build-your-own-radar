@@ -300,6 +300,12 @@ const Radar = function (size, radar) {
 
     var clickBlip = function () {
 
+      d3.selectAll('.blip-list-item').classed('highlight', false);
+
+      d3.selectAll('#blip-item-128').classed('highlight', true);
+
+
+      blipListItem.classed('highlight', true);
       d3.select('.blip-item-description.expanded').node() !== blipItemDescription.node() &&
         d3.select('.blip-item-description.expanded').classed("expanded", false);
       blipItemDescription.classed("expanded", !blipItemDescription.classed("expanded"));
@@ -489,7 +495,8 @@ const Radar = function (size, radar) {
       .text('Search')
       .on('click', function () {
         header.select('#search-box')
-          .attr('class', 'search-box-visible')
+          .attr('class', 'search-box-visible');
+       
       });
 
     var searchDiv = header.append('div')
