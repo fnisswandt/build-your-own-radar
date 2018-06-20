@@ -301,11 +301,8 @@ const Radar = function (size, radar) {
     var clickBlip = function () {
 
       d3.selectAll('.blip-list-item').classed('highlight', false);
+      this.getElementsByClassName("blip-list-item")[0].classList.toggle("highlight");
 
-      d3.selectAll('#blip-item-128').classed('highlight', true);
-
-
-      blipListItem.classed('highlight', true);
       d3.select('.blip-item-description.expanded').node() !== blipItemDescription.node() &&
         d3.select('.blip-item-description.expanded').classed("expanded", false);
       blipItemDescription.classed("expanded", !blipItemDescription.classed("expanded"));
