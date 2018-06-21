@@ -272,11 +272,23 @@ const Radar = function (size, radar) {
     appendDescription(blip, blipItemDescription, "usedBy", "Used By");
     appendDescription(blip, blipItemDescription, "versionsSupported", "Versions Supported");
 
+    if (blip.isReject()) {
+
+
+      appendDescription(blip, blipItemDescription, null, "This item should be actively removed in all markets");
+    }
+
     function appendDescription(blip, blipItemDescription, field, prettyPrint) {
+
+      if (field === null) {
+        blipItemDescription.append('p').html("<b>" + prettyPrint + "</b>");
+        return;
+      }
 
       var item = blip[field]();
 
       if (item && item.length > 0) {
+
         blipItemDescription.append('p').html("<b>" + prettyPrint + ": </b>" + blip[field]());
       }
 
