@@ -5,9 +5,11 @@
     "ring",
     "quadrant",
     "isNew",
+    "description",
     "owner",
+    "versionsSupported",
     "usedBy",
-    "description"
+    "isReject"
   ],
   "points": [
     {

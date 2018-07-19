@@ -82,7 +82,9 @@ const Site = function () {
             quadrants[blip.quadrant] = new Quadrant(_.capitalize(blip.quadrant));
           }
 
-          quadrants[blip.quadrant].add(new Blip(blip.name, ringMap[blip.ring], blip.isNew.toLowerCase() === 'true', blip.topic, blip.description, blip.owner, blip.usedBy, blip.versionsSupported, blip.isReject.toLowerCase() === 'true'))
+          var blipNewText = blip.isNew ? blip.isNew.toLowerCase() : 'false';
+          var blipRejectText = blip.isReject ? blip.isReject.toLowerCase() : 'false';
+          quadrants[blip.quadrant].add( new Blip( blip.name, ringMap[blip.ring], blipNewText === 'true', blip.topic, blip.description, blip.owner, blip.usedBy, blip.versionsSupported, blipRejectText === 'true' ) )
         });
 
         var radar = new Radar();
